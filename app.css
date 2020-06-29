@@ -25,19 +25,19 @@ h1 {
     /* height: 29em; */
 }
 
-
+/* 
 #formula-screen {
     color: hsla(49, 100%, 47%, 0.78);
     text-align: right;
     vertical-align: text-top;
     line-height: 20px;
     margin-right: 2px;
-}
+} */
 
-#result-field {
+#number-display {
     text-align: right;
     margin-right: 2px;
-    margin-top: 0em;
+    margin-top: 1em;
     vertical-align: text-top;
     line-height: 20px;
 }

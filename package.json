@@ -1,0 +1,29 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A javascript calculator!",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixlevert/Javascript-Calculator.git"
+  },
+  "author": "Felix Levert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixlevert/Javascript-Calculator/issues"
+  },
+  "homepage": "https://github.com/felixlevert/Javascript-Calculator#readme"
+}
