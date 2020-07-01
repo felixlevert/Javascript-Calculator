@@ -1,14 +1,13 @@
-import { Button } from './Button.js';
+import { DOMConnect } from './Utility/DOMConnect.js';
 
 class App {
-  static init(type) {
-    const buttons = document.querySelectorAll(`.${type}-btn`);
+  static init() {
+    const buttons = document.querySelectorAll('button');
     for (const button of buttons) {
-      new Button(button.id, type);
+      const type = button.className.split('-')[0];
+      new DOMConnect(button.id, type);
     }
   }
 }
 
-App.init('number');
-App.init('op');
-App.init('clear');
+App.init();

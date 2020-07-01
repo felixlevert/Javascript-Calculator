@@ -1,0 +1,127 @@
+body {
+  background-color: hsla(175, 0%, 20%, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: hsla(175, 100%, 47%, 0.78);
+  font-family: 'Notable', sans-serif;
+  text-shadow: 2px 2px hsla(49, 100%, 47%, 0.78);
+  text-align: center;
+}
+
+#calculator {
+  border: 2px solid black;
+  padding: 2px;
+  background-color: hsla(272, 0%, 85%, 0.64);
+  position: relative;
+  margin-top: 3em;
+  width: 420px;
+  font-family: 'Krona One', sans-serif;
+}
+
+
+#number-display {
+  text-align: right;
+  margin-right: 2px;
+  margin-top: 1em;
+  vertical-align: text-top;
+  line-height: 20px;
+}
+
+#buttons {
+  background-color: hsla(272, 0%, 11%, 0.64);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5em 5em 5em 5em 5em;
+}
+
+.number-btn {
+  background-color: hsla(360, 0%, 6%, 1);
+  color: white;
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.number-btn:hover {
+  background-color: hsla(360, 0%, 41%, 1);
+  font-size: 38px;
+  border: 2px solid white;
+}
+
+.operation-btn {
+  background-color: hsla(0, 45%, 16%, 1);
+  color: white;
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+}
+
+.operation-btn:hover {
+  background-color: hsla(0, 18%, 36%, 1);
+  font-size: 38px;
+  border: 2px solid white;
+}
+
+#equal {
+  background-color: hsla(224, 61%, 13%, 1);
+  color: white;
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+  grid-row: 4 / 6;
+  grid-column: 4;
+}
+
+#equal:hover {
+  background-color: hsla(241, 28%, 31%, 1);
+  font-size: 38px;
+  border: 2px solid white;
+}
+
+#clear {
+  background-color: hsla(0, 90%, 16%, 1);
+  color: white;
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+#clear:hover {
+  background-color: hsla(0, 68%, 31%, 1);
+  font-size: 38px;
+  border: 2px solid white;
+}
+
+.footer {
+  font-family: 'Notable', sans-serif;
+  color: hsla(360, 0%, 41%, 1);
+}
+
+#zero {
+  grid-row: 5 / 6;
+  grid-column: 1 / 3;
+}
+
+#plus {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+#minus {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+#multiply {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+}
+
+#divide {
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
