@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true
+    es2020: true,
+    node: true
   },
   extends: 'eslint:recommended',
   parserOptions: {
@@ -9,5 +10,6 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    'quotes': [2, 'single', { 'avoidEscape': true }]
   }
 }

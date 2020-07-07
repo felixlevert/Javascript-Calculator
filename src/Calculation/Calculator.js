@@ -1,4 +1,4 @@
-import { mathOperations } from "./MathOperations.js";
+import { mathOperations } from './MathOperations.js';
 
 class Calculator {
   constructor() {
