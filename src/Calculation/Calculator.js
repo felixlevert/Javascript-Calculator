@@ -1,4 +1,4 @@
-import { mathOperations } from './MathOperations.js';
+import { mathOperations } from "./MathOperations.js";
 
 class Calculator {
   constructor() {
@@ -25,7 +25,10 @@ class Calculator {
 
   calculate() {
     const result = mathOperations.applyOperator(this.operator, this.values);
-    if (result || result === 0) {
+    if (!isFinite(result)) {
+      this.values = [0, 0];
+      return "Can't divide by 0, DUH!";
+    } else if (result || result === 0) {
       this.values.shift();
       this.values.push(result);
       return result;
