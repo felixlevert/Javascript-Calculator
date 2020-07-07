@@ -7,6 +7,13 @@ export class OperationButton {
   }
 
   operationButtonHandler() {
+    if (
+      !calculator.currentNumber &&
+      !calculator.lastButtonOperator &&
+      !calculator.lastButtonEqual
+    ) {
+      return;
+    }
     if (!calculator.lastButtonOperator && !calculator.lastButtonEqual) {
       calculator.setValues();
       const result = calculator.calculate();
