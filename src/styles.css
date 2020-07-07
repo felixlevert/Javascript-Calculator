@@ -6,13 +6,14 @@ body {
   justify-content: center;
   height: 100vh;
   font-family: "Megrim", cursive;
-  margin: 30px;
 }
 
 h1 {
   color: hsla(0, 0%, 100%, 0.78);
   text-shadow: 2px 2px hsla(0, 0%, 55%, 0.78);
   text-align: center;
+  font-size: 27px;
+  font-family: "Russo One", sans-serif;
 }
 
 #calculator {
@@ -21,7 +22,6 @@ h1 {
   margin-top: 3em;
   width: 370px;
 }
-
 
 #number-display {
   outline: 0.01px solid hsla(0, 0%, 55%, 0.78);
@@ -42,7 +42,6 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 5em 5em 5em 5em 5em;
 }
-
 
 button {
   background-color: hsla(272, 0%, 11%, 0.64);
@@ -122,7 +121,6 @@ button {
 }
 
 .footer {
-  background-color: hsla(0, 0%, 100%, 0.151);
-  color: hsl(0, 0%, 74%);
-  box-shadow: 2px 2px black;
+  color: hsla(0, 0%, 74%, 0.219);
+  font-family: "Russo One", sans-serif;
 }
