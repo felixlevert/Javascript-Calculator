@@ -2,6 +2,7 @@ import { NumberButton } from '../Buttons/NumberButton.js';
 import { OperationButton } from '../Buttons/OperationButton.js';
 import { clearButton } from '../Buttons/ClearButton.js';
 import { equalButton } from '../Buttons/EqualButton.js';
+import { negativeButton } from '../Buttons/NegativeButton.js';
 
 export class DOMConnect {
   constructor(id, type) {
@@ -12,11 +13,19 @@ export class DOMConnect {
       this.button.addEventListener('click', btn.numberButtonHandler.bind(this));
     } else if (type === 'operation') {
       const btn = new OperationButton(this.value);
-      this.button.addEventListener('click', btn.operationButtonHandler.bind(this));
+      this.button.addEventListener(
+        'click',
+        btn.operationButtonHandler.bind(this)
+      );
     } else if (type === 'clear') {
       this.button.addEventListener('click', clearButton.clearButtonHandler);
     } else if (type === 'equal') {
       this.button.addEventListener('click', equalButton.equalButtonHandler);
+    } else if (type === 'neg') {
+      this.button.addEventListener(
+        'click',
+        negativeButton.negativeButtonHandler
+      );
     }
   }
 }
